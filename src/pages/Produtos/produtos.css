@@ -1,0 +1,36 @@
+.content__sidebar {
+  padding: 30px;
+  color: #2a4365;
+}
+
+.content__sidebar__title h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.table__users {
+  width: 100%;
+}
+
+.table__users thead tr {
+  width: 60%;
+  padding: 0 40px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table__users tbody tr {
+  height: 90px;
+  min-width: 420px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: #f1f6fa;
+}
+
+.table__users tbody tr td:first-child {
+  font-weight: 800;
+}

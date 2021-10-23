@@ -1,0 +1,24 @@
+button {
+   padding: 1em;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   background: #2C5282;
+   color: #fff;
+   margin: 1em 0;
+   line-height: 16px;
+   font-weight: 800;
+}
+
+button:hover {
+   transition: 0.2s;
+   background: #fff;
+   color: #2C5282;
+   box-shadow: 0 0 0 1pt #2C5282;
+}
+
+.remove {
+   color: #D64D4D;
+}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total controle - Cadastro</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Login/login.css">
+    <link rel="stylesheet" href="/src/components/Common/Common.css" />
+    <script src="../../components/Header/Header.js"></script>
+    <script src="../../components/Input/Input.js" defer></script>
+    <script src="./register.js" defer></script>
+  </head>
+  <body>
+    <main-header>
+      <a href="../Login/login.html" slot="text">Entrar</a>
+    </main-header>
+    <div class="container">
+      <h1>Crie sua conta</h1>
+      <form onsubmit="onSubmit(event)">
+        <input-custom name="name">
+          <img slot="icon-input" src="../../assets/user.svg" alt="" />
+          Nome Completo
+        </input-custom>
+        <input-custom type="email" name="email">
+          <img slot="icon-input" src="../../assets/letter.svg" alt="" />
+          Email
+        </input-custom>
+        <input-custom type="password" name="password">
+          <img slot="icon-input" src="../../assets/padlock.svg" alt="" />
+          Senha
+        </input-custom>
+        <p class="error-message">Preencha os campos corretamente!</p>
+        <button type="submit" class="register__submit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>

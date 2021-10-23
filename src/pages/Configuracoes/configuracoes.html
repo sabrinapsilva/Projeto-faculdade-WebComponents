@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configurações</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../components/Common/Common.css" />
+    <script src="../../components/Header/Header.js" defer></script>
+    <script src="../../components/SideBar/SideBar.js"></script>
+    <script src="../../components/Input/Input.js" defer></script>
+    <script src="./configuracoes.js" defer></script>
+  </head>
+  <body>
+    <main-header>
+      <p slot="text"></p>
+    </main-header>
+    <side-bar>
+      <div slot="content-sidebar" class="content__sidebar d-flex-between-column">
+        <div>
+          <h1 class="title">Alterar meus dados</h1>
+          <input-custom name="name">
+            <img slot="icon-input" src="../../assets/user.svg" alt="" />
+            Nome
+          </input-custom>
+          <input-custom type="email" name="email">
+            <img slot="icon-input" src="../../assets/letter.svg" alt="" />
+            Email
+          </input-custom>
+          <input-custom name="password">
+            <img slot="icon-input" src="../../assets/padlock.svg" alt="" />
+            Senha
+          </input-custom>
+          <p class="error-message">Preencha os campos corretamente!</p>
+        </div>
+        <div class="d-flex-between padding-right-90">
+          <button id="removeAccount" class="button button-red-large" onclick="removeAccount()">Remover cadastro</button>
+          <button class="button button-blue-large" onclick="changeData()">Alterar dados</button>
+        </div>
+      </div>
+    </side-bar>
+  </body>
+</html>

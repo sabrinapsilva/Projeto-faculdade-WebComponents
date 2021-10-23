@@ -1,0 +1,155 @@
+* {
+    color: #ffffff;
+}
+
+body { 
+    height: calc(100vh - 60px);
+    background-color: #d6dbe4; 
+}
+
+.header {
+    padding: 0 14vw 0 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4299E1;
+}
+
+.header img {   
+    height: 80px;
+}
+
+.header div a:first-child {
+    margin-right: 20px;
+}
+
+.container {
+    height: 66%;
+    background-color: #4299E1;
+    padding: 0 14vw;
+}
+
+.section__title h1 {
+    color: #2D3748;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-left: 30%;
+}
+
+.section__title h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 26%;
+}
+
+.section__about {
+    display: flex;
+    font-size: 1.3rem;
+    padding-top: 30px;
+}
+
+.section__about p {
+    width: 70%;
+    margin: 0;
+}
+
+.section__about p:last-child {
+    font-weight: 600;
+    color: #2D3748;
+}
+
+.section__about img {
+    width: 25%;
+}
+
+.section__about-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section__about-info div {
+    width: 16%;
+}
+
+.section__about-info h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2D3748;
+}
+
+.alert-message {
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.alert-message p { 
+    width: 45%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2D3748;
+    padding: 0 14vw;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background-color: #2A4365;
+}
+
+@media(max-width: 767px) {
+    .container {
+        height: 100%;
+    }
+
+    .section__title h1 {
+        padding-top: 10px;
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+    
+    .section__title h2 {
+        font-size: 1rem;
+        margin-left: 15%;
+    }
+    
+    .section__about {
+        flex-direction: column;
+    }
+
+    .section__about p {
+        width: 100%;
+    }
+
+    .section__about img {
+        width: 55%;
+        margin: 4px 0 0 auto;
+    }
+
+    .section__about-info {
+        flex-wrap: wrap;
+    }
+    
+    .section__about-info div {
+        width: 43%;
+    }
+
+    .section__about-info div:last-child {
+        margin-top: 22px;
+    }
+
+    .alert-message { 
+        height: 200px;
+    }
+
+    .alert-message p { 
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 60px;
+    }
+}

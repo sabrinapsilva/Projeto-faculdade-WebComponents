@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total controle - Login</title>
+  <link rel="stylesheet" href="/src/reset.css"/>
+  <link rel="stylesheet" href="/src/pages/Login/login.css">
+  <link rel="stylesheet" href="/src/components/Common/Common.css" />
+  <script src="../../components/Input/Input.js" defer></script>
+  <script src="./login.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+      <h1>Acesse sua conta</h1>
+      <form onsubmit="onSubmit(event)">
+        <input-custom type="email" name="email">
+          <img slot="icon-input" src="../../assets/letter.svg" alt="" />
+          Email
+        </input-custom>
+        <input-custom type="password" name="password">
+          <img slot="icon-input" src="../../assets/padlock.svg" alt="" />
+          Senha
+        </input-custom>
+        <p class="error-message"></p>
+        <button type="submit" class="login__submit">Entrar</button>
+        <a href="../Register/register.html">Não possui uma conta?</a>
+      </form>
+    </div>
+  </body>
+</html>

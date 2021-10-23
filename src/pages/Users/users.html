@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuários</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../components/Common/Common.css" />
+    <script src="./users.js"></script>
+    <script src="../../components/Header/Header.js" defer></script>
+    <script src="../../components/SideBar/SideBar.js"></script>
+    <script src="../../components/Table/Table.js"></script>
+    <script src="../../components/Button/Button.js"></script>
+    <script src="../../components/Input/Input.js" defer></script>
+    <script src="../../components/Modal/Remove/Remove.js"></script>
+    <script src="../../components/Modal/CreateEdit/User/CreateEdit.js"></script>
+  </head>
+  <body>
+    <main-header>
+      <p slot="text"></p>
+    </main-header>
+    <side-bar>
+      <div slot="content-sidebar">
+        <div class="content__sidebar__title">
+          <h1 class="title">Usuários:</h1>
+          <!-- <div class="search">Campo de busca</div> -->
+        </div>
+        <btn-rounded onclick="openModalCreateEdit()">+ Adicionar Usuário</btn-rounded>
+        <table-custom table="users"></table-custom>
+        <!-- <div class="pagination">Paginação</div> -->
+      </div>
+    </side-bar>
+    <modal-remove>Deseja realmente remover o usuario?</modal-remove>
+    <modal-create-edit open="false">
+      Criar Usuario
+      <p slot="errorMessage" class="error-message">Preencha os campos corretamente!</p>
+    </modal-create-edit>
+  </body>
+</html>

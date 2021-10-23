@@ -1,0 +1,49 @@
+.error-message {
+  visibility: hidden;
+  color: #d64d4d;
+  margin: 0;
+}
+
+.active {
+  visibility: visible;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2a4365;
+}
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-flex-between-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button {
+  margin: 1.5em 0;
+  border-radius: 5px;
+  border: none;
+  align-self: flex-end;
+  color: #fff;
+  font-size: 1em;
+}
+
+.button-blue-large {
+  background: #2a4365;
+  padding: 1em 3em;
+}
+
+.button-red-large {
+  background: #d64d4d;
+  padding: 1em 2em;
+}
+
+.padding-right-90 {
+  padding-right: 90px;
+}

@@ -1,0 +1,16 @@
+.contruction {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contruction h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.contruction img {
+    width: 200px;
+}
